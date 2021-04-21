@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "strategy",
-        "observer"
+        "observer",
+        "decorator"
     ]
 }
