@@ -1,0 +1,31 @@
+//Quitting scenario
+Welcome to our Timer System
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: q
+Goodbye
+
+//Invalid Input Scenario
+Welcome to our Timer System
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: g
+Invalid input
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: 
+
+//One minute Scenario
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: 1
+Screen disappears except for the timer, it starts out as:
+00:59, and keeps overwriting until it gets down to 00:00
+00:00
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: 
+
+//5 minutes scenario
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: 5
+Screen disappears except for the timer, it starts out as:
+04:59, and keeps overwriting until it gets down to 00:00
+00:00
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: 
+
+//30 sec scenario
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: 30
+Screen disappears except for the timer, it starts out as:
+00:29, and keeps overwriting until it gets down to 00:00
+00:00
+Enter (1)minute, (5)minutes, (30)seconds or (q)uit: 

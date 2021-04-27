@@ -3,8 +3,9 @@
         "strategy",
         "singleton",
         "observer",
+        "iterator",
         "factory",
         "decorator",
-        "iterator"
+        "command"
     ]
 }
