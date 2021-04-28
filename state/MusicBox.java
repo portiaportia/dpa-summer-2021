@@ -9,9 +9,10 @@ public class MusicBox {
     private State state;
 
     public MusicBox() {
+        System.out.println("Creating Our Music Box");
         englishState = new EnglishState(this);
-        frenchState = new EnglishState(this);
-        spanishState = new EnglishState(this);
+        frenchState = new FrenchState(this);
+        spanishState = new SpanishState(this);
 
         state = englishState;
         System.out.println("Starting up the Music Box");
@@ -54,18 +55,23 @@ public class MusicBox {
     }
 
     public void playSong(String songName, ArrayList<String> lyrics) {
-        System.out.println("Playing: " + songName);
+        System.out.println("\nPlaying: " + songName);
         for (String line : lyrics) {
             sleep();
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
             System.out.println(line);
         }
+        sleep();
+        System.out.println();
+    }
+
+    private void clear() {
+        System.out.print("\033[H\033[2J");
+            System.out.flush();
     }
 
     private void sleep() {
         try {
-            TimeUnit.MILLISECONDS.sleep(2000);
+            TimeUnit.MILLISECONDS.sleep(1000);
         } catch (Exception e) {
             System.out.println("Timmer error");
         }
